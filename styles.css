@@ -1,3 +1,23 @@
+:root {
+    --leafy-green: #596D48;
+    --input-grey: #E5E7EB;
+}
+
 body {
-    color: green;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.images-container {
+    background: blue;
+    width: 40vw;
+    height: 100vh;
+}
+
+.info-container {
+    background: red;
+    width: 60vw;
+    height: 100vh;
 }
