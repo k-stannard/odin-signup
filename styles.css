@@ -127,6 +127,10 @@ input {
     padding: 4px;
 }
 
+input:focus {
+    box-shadow: 4px 4px 4px 2px var(--input-grey);
+}
+
 #signup-container {
     padding: 20px 0px 40px 40px;
     display: inline-flex;
