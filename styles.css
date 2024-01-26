@@ -2,6 +2,9 @@
     --leafy-green: #596D48;
     --input-grey: #E5E7EB;
     --info-bg: #f9fafb;
+    --header: auto;
+    --footer: 200px;
+    --main: calc(100vh - calc(var(--header) + var(--footer)));
 }
 
 @font-face {
@@ -77,9 +80,36 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 40px;
+    height: var(--header);
     width: 60%;
     margin-top: 15%;
     font-weight: bold;
     font-size: large;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#form-container {
+    background: #ffffff;
+    height: var(--main);
+    margin-top: 20px;
+    box-shadow: 0px 5px 10px var(--input-grey);
+    padding: 10px 0px 0px 40px;
+}
+
+#user-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
+
+#signup-container {
+    padding: 20px 0px 40px 40px;
 }
